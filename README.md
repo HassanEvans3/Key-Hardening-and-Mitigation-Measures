@@ -1,10 +1,32 @@
-# Key-Hardening-and-Mitigation-Measures
+📁 Project Overview: Linux Server Hardening for BSC
+This project presents a comprehensive approach to hardening a Linux server for The Baker Street Corporation (BSC)—an organization responsible for handling highly sensitive and confidential data. Acting as a security professional, my objective was to audit, secure, and automate critical components of the server to reduce vulnerabilities and ensure long-term system resilience.
 
+🎯 Objectives & Scope
+The project was executed in three structured phases:
 
-This project focused on implementing key system hardening and mitigation strategies to enhance data security. A major priority was ensuring that all users and groups had proper access controls. This involved regularly updating group memberships and permissions, especially as employees join, leave, or change roles. During the project, several user directories required manual corrections to align file access with organizational roles.
+🔐 Day 1: User, Group, and File Security
+Performed a full system inventory and backup.
 
-Strong password policies were another critical focus. Enforcing complex password requirements helps prevent unauthorized access by making it harder for attackers to guess or crack credentials.
+Audited users and groups to identify misconfigurations and unnecessary accounts.
 
-Limiting sudo access was also emphasized. Since users with sudo privileges can make significant changes to the system—including creating backdoors or altering sensitive files—it is crucial to restrict this level of access. For example, Sherlock was given full sudo rights, while Watson, Mycroft, and the research group were granted limited permissions to run specific scripts.
+Enforced strong password policies and expiration rules.
 
-Lastly, maintaining up-to-date system packages is essential for reducing vulnerabilities. Regularly running apt update and apt upgrade ensures that known security flaws are patched, helping to safeguard the system from exploits and malware.
+Reviewed and updated sudo permissions based on the principle of least privilege.
+
+Validated and corrected file and directory permissions to restrict unauthorized access.
+
+⚙️ Day 2: System Configuration Hardening
+Secured SSH configuration to minimize remote access risk.
+
+Updated and patched all system packages.
+
+Disabled unnecessary services to reduce the system's attack surface.
+
+Enabled and configured logging to support system monitoring and future audits.
+
+🛠️ Day 3: Automation and Reporting
+Scripted all major hardening tasks completed on Days 1 and 2.
+
+Scheduled scripts to enforce security configurations automatically.
+
+Compiled a summary report documenting all implemented security measures.
